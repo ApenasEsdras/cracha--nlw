@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+main {
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.avatar span:hover {
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.avatar > img:hover {
+  width: 15rem;
+  height: 18rem;
+  align-items: center;
+  transition: 1s;
+  opacity: 50%;
+  -webkit-transform: scale(0.8);
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.6s;
+  color: white;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  justify-content: center;
+}
+
+li {
+  position: relative;
+}
+
+li.youtube:hover {
+  top: -10px;
+  margin-top: -10px;
+  transition: 0.4s;
+}
+
+li.facebook:hover {
+  top: -10px;
+  margin-top: -10px;
+  transition: 0.4s;
+}
+
+li.instagram:hover {
+  top: -10px;
+  margin-top: -10px;
+  transition: 0.4s;
+}
+
+li.twitter:hover {
+  top: -10px;
+  margin-top: -10px;
+  transition: 0.4s;
+}
